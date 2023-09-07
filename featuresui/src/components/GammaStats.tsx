@@ -21,7 +21,8 @@ const GammaStats: React.FC = () => {
       <button onClick={handleClick}>
         {showTable ? "Hide Gamma Statistics" : "Get Gamma Statistics"}
       </button>
-      {showTable && <StasTable wineData={data} measure="Gamma" />}
+    
+      {showTable && (<> <h4>Gamma Statistics</h4><StasTable wineData={data} measure="Gamma" /></>)}
     </section>
   );
 };
