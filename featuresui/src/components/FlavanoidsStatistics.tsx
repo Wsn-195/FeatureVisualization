@@ -3,7 +3,7 @@ import StatsTable from './StatsTable';
 import { WineData } from '../contracts/winedata';
 
 interface FlavanoidsStatisticsProps {
-  wineData: WineData[]; // Replace 'WineItem' with the actual type of your data
+  wineData: WineData[]; // this is an interface to define shape of wine object 
 }
 
 const FlavanoidsStatistics: React.FC<FlavanoidsStatisticsProps> = ({ wineData }) => {

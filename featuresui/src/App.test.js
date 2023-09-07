@@ -110,7 +110,7 @@ it('should handle no mode for calculateMode', () => {
 
   const mode = calculateMode(wineData, className, measure);
 
-  expect(mode).toBe('NaN'); // No mode, as all values are unique
+  expect(mode).toBe('N/A'); // No mode, as all values are unique
 });
 
 

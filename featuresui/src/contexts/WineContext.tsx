@@ -16,6 +16,7 @@ interface WineDataProviderProps {
   children: ReactNode;
 }
 
+//context provider which will be wrapping application to provide state aceess to all components
 export const WineDataProvider: React.FC<WineDataProviderProps> = ({ children }) => {
   const [data, setData] = useState<wineItem[]>(WineData);
 
@@ -35,6 +36,7 @@ export const WineDataProvider: React.FC<WineDataProviderProps> = ({ children }) 
   );
 };
 
+//created a customhook to use winecontext 
 export const useWineContext = (): WineContextValue => {
   const context = useContext(WineContext);
 
